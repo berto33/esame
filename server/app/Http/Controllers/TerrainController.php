@@ -14,7 +14,7 @@ class TerrainController extends Controller
             $method = $request->query('sort');
         }
 
-        return Terrain::orderBy('created_at', $method)->get();
+        return Terrain::orderBy('ettari', $method)->get();
     }
 
     public function view($id) {
